@@ -22,6 +22,19 @@ PHP
 После вставьте ключ при вызове js библиотеки yandex maps api -> <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ВАШ API КЛЮЧ" type="text/javascript"></script>
 После пользуйтесь. Почти все пункты прокомментированы.
 ```
+## Скриншоты
+https://prnt.sc/20xmbqc
+https://prnt.sc/20xmc8a
+https://prnt.sc/20xmcdc
+https://prnt.sc/20xmch8
+https://prnt.sc/20xmcml
+https://prnt.sc/20xmcq2
+https://prnt.sc/20xmcts
+https://prnt.sc/20xmcwi
+https://prnt.sc/20xmcy8
+https://prnt.sc/20xmczw
+https://prnt.sc/20xmd4l
+https://prnt.sc/20xmd7r
 Документация по YANDEX API https://yandex.ru/dev/maps/jsbox/2.1/customSet_controls
 
 Если будут вопросы пишите zendarol@mail.ru
