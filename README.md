@@ -23,6 +23,7 @@ PHP
 После пользуйтесь. Почти все пункты прокомментированы.
 ```
 ## Скриншоты
+```sh
 https://prnt.sc/20xmbqc
 https://prnt.sc/20xmc8a
 https://prnt.sc/20xmcdc
@@ -35,6 +36,7 @@ https://prnt.sc/20xmcy8
 https://prnt.sc/20xmczw
 https://prnt.sc/20xmd4l
 https://prnt.sc/20xmd7r
+```
 Документация по YANDEX API https://yandex.ru/dev/maps/jsbox/2.1/customSet_controls
 
 Если будут вопросы пишите zendarol@mail.ru
