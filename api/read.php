@@ -50,8 +50,8 @@ if ($num>0) {
 
 else {
 
-    // установим код ответа - 404 Не найдено
-    http_response_code(404);
+    // установим код ответа - 200 Не найдено
+    http_response_code(200);
 
     // сообщаем пользователю, что товары не найдены
     echo json_encode(array("message" => "Товары не найдены."), JSON_UNESCAPED_UNICODE);

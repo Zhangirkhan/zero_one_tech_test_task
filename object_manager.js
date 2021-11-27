@@ -66,21 +66,30 @@ $(function() {
         // Создаем коллекцию, и массив для хранения наших точек.
         myCollection = new ymaps.GeoObjectCollection(), myPoints = [];
 
-        //Получаем json точик
-        $.getJSON("/api/read.php", function(data) {
-            myPoints = data;
-            // Заполняем коллекцию данными.
-            for (var i = 0, l = myPoints.length; i < l; i++) {
-                var point = myPoints[i];
-                myCollection.add(new ymaps.Placemark(
-                    point.coords, {
-                        balloonContentBody: point.text
-                    }
-                ));
+        $.ajax({
+            url: "/api/read.php",
+            type: "GET",
+            contentType: 'application/json',
+            success: function(data, textStatus, xhr) {
+                myPoints = data;
+                // Заполняем коллекцию данными.
+                for (var i = 0, l = myPoints.length; i < l; i++) {
+                    var point = myPoints[i];
+                    myCollection.add(new ymaps.Placemark(
+                        point.coords, {
+                            balloonContentBody: point.text
+                        }
+                    ));
+                }
+                // Добавляем коллекцию меток на карту.
+                myMap.geoObjects.add(myCollection);
+            },
+            error: function(xhr, resp, text) {
+                // вывести ошибку в консоль
+                console.log(xhr, resp, text);
             }
-            // Добавляем коллекцию меток на карту.
-            myMap.geoObjects.add(myCollection);
         });
+
     }
 });
 
